@@ -1,11 +1,24 @@
-# Cameron Brown's Portfolio Website
+# Cameron Brown — Portfolio
 
-This is the code for my Portfolio Website which can be viewed at https://www.cameronjoebrown.com
+A personal portfolio website showcasing my projects and experience.
 
-## How It Was Built
+🔗 [cameronjoebrown.com](https://www.cameronjoebrown.com)
 
-This is just a static website built using Angular and styled using Bootstrap
+## Tech Stack
+- **Framework:** Angular
+- **Styling:** Bootstrap
+- **Runtime:** Bun
+- **Testing Framework:** Vitest
+- **Deployment:** Vercel
+- **DNS:** Amazon Route 53
 
-## Deployment
+## Running Locally
+```bash
+bun install
+bun start
+```
 
-This site is deployed to GitHub Pages using GitHub Actions
+## Running Tests
+```bash
+ng test
+```
