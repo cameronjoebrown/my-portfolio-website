@@ -11,9 +11,9 @@ export class ProjectsComponent implements OnInit {
   openSourceProjects = [
     {
       title: 'Portfolio Website',
-      description: 'The code for this portfolio website, built with Angular and Bootstrap. It is currently deployed using a Github Action and hosted on GitHub Pages.',
-      technologies: ['Angular', 'Bootstrap', 'TypeScript', 'GitHub Actions', 'GitHub Pages'],
-      gitHubUrl: 'https://github.com/cameronjoebrown/cameronjoebrown.github.io',
+      description: 'The code for this portfolio website, built with Angular and Bootstrap. It is deployed using Vercel.',
+      technologies: ['Angular', 'Bootstrap', 'TypeScript', 'Vercel', 'bun', 'Vitest'],
+      gitHubUrl: 'https://github.com/cameronjoebrown/my-portfolio-website',
       liveUrl: 'https://cameronjoebrown.com'
     },
     {
