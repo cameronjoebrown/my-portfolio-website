@@ -20,5 +20,5 @@ bun start
 
 ## Running Tests
 ```bash
-ng test
+bun run test
 ```
