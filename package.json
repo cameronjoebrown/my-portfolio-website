@@ -9,9 +9,23 @@
     "lint": "ng lint",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky"
   },
   "private": true,
+    "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.html": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,scss,css,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "@angular/animations": "21.2.6",
     "@angular/common": "21.2.6",
@@ -40,7 +54,9 @@
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "husky": "^9.1.7",
     "jsdom": "29.0.1",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.8.1",
     "typescript": "5.9.3",
     "typescript-eslint": "8.56.1",
