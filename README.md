@@ -22,3 +22,8 @@ bun start
 ```bash
 bun run test
 ```
+
+## Linting
+```bash
+bun lint
+```

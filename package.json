@@ -6,13 +6,12 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
+    "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy": "ng deploy --cname=www.cameronjoebrown.com --no-silent"
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/schematics": "21.2.5",
     "@angular/animations": "21.2.6",
     "@angular/common": "21.2.6",
     "@angular/compiler": "21.2.6",
@@ -23,7 +22,6 @@
     "@angular/platform-browser-dynamic": "21.2.6",
     "@angular/router": "21.2.6",
     "@fortawesome/angular-fontawesome": "4.0.0",
-    "@fortawesome/fontawesome-svg-core": "7.1.0",
     "@fortawesome/free-brands-svg-icons": "7.1.0",
     "@ng-bootstrap/ng-bootstrap": "20.0.0",
     "@popperjs/core": "2.11.8",
@@ -34,24 +32,17 @@
     "zone.js": "0.15.1"
   },
   "devDependencies": {
-    "@angular-eslint/builder": "^21.3.1",
-    "@angular-eslint/schematics": "21.3.1",
-    "@angular-eslint/template-parser": "21.3.1",
+    "@angular-eslint/builder": "21.3.1",
     "@angular/build": "21.2.5",
     "@angular/cli": "21.2.5",
     "@angular/compiler-cli": "21.2.6",
+    "@eslint/js": "^10.0.1",
     "@types/node": "25.5.0",
-    "@typescript-eslint/eslint-plugin": "8.56.1",
-    "@typescript-eslint/parser": "8.56.1",
-    "@typescript-eslint/types": "8.56.1",
-    "@typescript-eslint/utils": "8.56.1",
-    "angular-cli-ghpages": "3.0.0",
-    "eslint": "9.26.0",
-    "eslint-config-prettier": "10.1.8",
+    "angular-eslint": "21.3.1",
+    "eslint": "^10.0.3",
     "jsdom": "28.1.0",
-    "prettier": "3.8.1",
-    "ts-node": "10.9.2",
     "typescript": "5.9.3",
+    "typescript-eslint": "8.56.1",
     "vitest": "4.0.18"
   }
 }
