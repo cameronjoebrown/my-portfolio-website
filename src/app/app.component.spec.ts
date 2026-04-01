@@ -7,8 +7,7 @@ describe('AppComponent', () => {
     let fixture: ComponentFixture<AppComponent>;
     beforeEach(async () => {
         TestBed.configureTestingModule({
-            imports: [RouterOutlet],
-            declarations: [AppComponent]
+            imports: [RouterOutlet, AppComponent]
         }).compileComponents();
 
         fixture = TestBed.createComponent(AppComponent);

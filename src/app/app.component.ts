@@ -1,10 +1,12 @@
 import { Component, HostListener } from '@angular/core';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NgbCollapse } from '@ng-bootstrap/ng-bootstrap/collapse';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    standalone: false
+    imports: [RouterLink, NgbCollapse, RouterLinkActive, RouterOutlet]
 })
 export class AppComponent {
     title = 'portfolio-website';
