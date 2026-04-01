@@ -1,17 +1,50 @@
-<nav class="navbar fixed-top navbar-light navbar-expand-sm bg-on-scroll bg-transparent" (scroll)="onWindowScroll();">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="" (click)="closeMenu()">Cameron Brown</a>
-    <button class="navbar-toggler" type="button" (click)="toggleCollapsedMenu()" aria-label="Expand Menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" routerLink="" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a></li>
-      </ul>
+<nav
+    class="navbar fixed-top navbar-light navbar-expand-sm bg-on-scroll bg-transparent"
+    (scroll)="onWindowScroll()"
+>
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="" (click)="closeMenu()">Cameron Brown</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            (click)="toggleCollapsedMenu()"
+            aria-label="Expand Menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        routerLink=""
+                        [routerLinkActiveOptions]="{ exact: true }"
+                        routerLinkActive="active"
+                        (click)="closeMenu()"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        routerLink="/about"
+                        routerLinkActive="active"
+                        (click)="closeMenu()"
+                        >About</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a
+                        class="nav-link"
+                        routerLink="/projects"
+                        routerLinkActive="active"
+                        (click)="closeMenu()"
+                        >Projects</a
+                    >
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <router-outlet></router-outlet>

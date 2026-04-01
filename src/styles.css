@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "bootstrap/dist/css/bootstrap.css";
+@import 'bootstrap/dist/css/bootstrap.css';
 
 .distance-from-navbar {
-  padding-top: 75px;
+    padding-top: 75px;
 }
 
-body, html {
-  background: #d0e8ca;
+body,
+html {
+    background: #d0e8ca;
 }

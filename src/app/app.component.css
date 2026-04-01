@@ -1,16 +1,18 @@
-.nav-link, .navbar-brand {
-  color : #4d4d4d;
-  font-size: 20px;
+.nav-link,
+.navbar-brand {
+    color: #4d4d4d;
+    font-size: 20px;
 }
 
-.nav-link:hover, .navbar-brand:hover {
-  color: black;
+.nav-link:hover,
+.navbar-brand:hover {
+    color: black;
 }
 
 .navbar-nav .active {
-  color: black;
+    color: black;
 }
 
 .bg-on-scroll {
-  background-color: #d9f2d2;
+    background-color: #d9f2d2;
 }

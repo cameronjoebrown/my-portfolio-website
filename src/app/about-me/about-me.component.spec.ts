@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AboutMeComponent } from './about-me.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-
 describe('AboutMeComponent', () => {
     let component: AboutMeComponent;
     let fixture: ComponentFixture<AboutMeComponent>;

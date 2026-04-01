@@ -27,3 +27,10 @@ bun run test
 ```bash
 bun lint
 ```
+
+## Prettier Formatting
+```bash
+bun run format # Formats all files in project using Prettier
+# or
+bun run format:check # Check if all files have been formatted with Prettier 
+```
