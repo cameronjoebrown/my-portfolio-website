@@ -7,45 +7,45 @@ import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 
 export default defineConfig([
-  {
-    files: ['**/*.ts'],
-    extends: [
-      eslint.configs.recommended,
-      tseslint.configs.recommended,
-      tseslint.configs.stylistic,
-      angular.configs.tsRecommended,
-      prettierConfig,          // ← disables conflicting ESLint/TS rules
-    ],
-    plugins: {
-      prettier,                // ← registers the plugin
-    },
-    processor: angular.processInlineTemplates,
-    rules: {
-      'prettier/prettier': 'error',   // ← Prettier violations = ESLint errors
-      '@angular-eslint/directive-selector': [
-        'error',
-        {
-          type: 'attribute',
-          prefix: 'app',
-          style: 'camelCase',
+    {
+        files: ['**/*.ts'],
+        extends: [
+            eslint.configs.recommended,
+            tseslint.configs.recommended,
+            tseslint.configs.stylistic,
+            angular.configs.tsRecommended,
+            prettierConfig // ← disables conflicting ESLint/TS rules
+        ],
+        plugins: {
+            prettier // ← registers the plugin
         },
-      ],
-      '@angular-eslint/component-selector': [
-        'error',
-        {
-          type: 'element',
-          prefix: 'app',
-          style: 'kebab-case',
-        },
-      ],
+        processor: angular.processInlineTemplates,
+        rules: {
+            'prettier/prettier': 'error', // ← Prettier violations = ESLint errors
+            '@angular-eslint/directive-selector': [
+                'error',
+                {
+                    type: 'attribute',
+                    prefix: 'app',
+                    style: 'camelCase'
+                }
+            ],
+            '@angular-eslint/component-selector': [
+                'error',
+                {
+                    type: 'element',
+                    prefix: 'app',
+                    style: 'kebab-case'
+                }
+            ]
+        }
     },
-  },
-  {
-    files: ['**/*.html'],
-    extends: [
-      angular.configs.templateRecommended,
-      angular.configs.templateAccessibility,
-    ],
-    rules: {},
-  },
+    {
+        files: ['**/*.html'],
+        extends: [
+            angular.configs.templateRecommended,
+            angular.configs.templateAccessibility
+        ],
+        rules: {}
+    }
 ]);
