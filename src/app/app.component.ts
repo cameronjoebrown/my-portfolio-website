@@ -12,7 +12,7 @@ export class AppComponent {
     public isMenuCollapsed = true;
 
     @HostListener('window:scroll')
-    onWindowScroll(): any {
+    onWindowScroll() {
         const element = document.querySelector('.navbar');
         if (window.pageYOffset > 5) {
             element.classList.remove('bg-transparent');
@@ -21,7 +21,7 @@ export class AppComponent {
         }
     }
 
-    toggleCollapsedMenu(): any {
+    toggleCollapsedMenu() {
         this.isMenuCollapsed = !this.isMenuCollapsed;
         const element = document.querySelector('.navbar');
         if (!this.isMenuCollapsed) {
@@ -31,7 +31,7 @@ export class AppComponent {
         }
     }
 
-    closeMenu(): any {
+    closeMenu() {
         this.isMenuCollapsed = true;
         const element = document.querySelector('.navbar');
         element.classList.add('bg-transparent');

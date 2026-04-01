@@ -10,8 +10,7 @@ describe('AboutMeComponent', () => {
 
     beforeEach(async () => {
         TestBed.configureTestingModule({
-            declarations: [AboutMeComponent],
-            imports: [AppModule, FontAwesomeModule]
+            imports: [AppModule, FontAwesomeModule, AboutMeComponent]
         }).compileComponents();
 
         fixture = TestBed.createComponent(AboutMeComponent);

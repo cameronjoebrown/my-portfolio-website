@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 @Component({
     selector: 'app-about-me',
     templateUrl: './about-me.component.html',
     styleUrls: ['./about-me.component.css'],
-    standalone: false
+    imports: [FaIconComponent]
 })
-export class AboutMeComponent implements OnInit {
-    constructor() {}
-
+export class AboutMeComponent {
     faGithub = faGithub;
     faLinkedin = faLinkedin;
-
-    ngOnInit(): void {}
 }

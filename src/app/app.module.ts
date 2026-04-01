@@ -8,12 +8,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-    declarations: [
-        AppComponent,
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        FontAwesomeModule,
         HomeComponent,
         AboutMeComponent
     ],
-    imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]
 })

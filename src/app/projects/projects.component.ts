@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   openSourceProjects = [
     {
       title: 'Portfolio Website',
       description: 'The code for this portfolio website, built with Angular and Bootstrap. It is deployed using Vercel.',
-      technologies: ['Angular', 'Bootstrap', 'TypeScript', 'Vercel', 'bun', 'Vitest'],
+      technologies: ['Angular', 'Bootstrap', 'TypeScript', 'Vercel', 'Bun', 'Vitest'],
       gitHubUrl: 'https://github.com/cameronjoebrown/my-portfolio-website',
       liveUrl: 'https://cameronjoebrown.com'
     },
@@ -40,8 +40,4 @@ export class ProjectsComponent implements OnInit {
       year: '2024-Present'
     }
   ]
-
-  ngOnInit(): void {
-      
-  }
 }
