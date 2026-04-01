@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AboutMeComponent } from './about-me.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { AppModule } from '../app.module';
+
 
 describe('AboutMeComponent', () => {
     let component: AboutMeComponent;
@@ -10,7 +9,7 @@ describe('AboutMeComponent', () => {
 
     beforeEach(async () => {
         TestBed.configureTestingModule({
-            imports: [AppModule, FontAwesomeModule, AboutMeComponent]
+            imports: [FontAwesomeModule, AboutMeComponent]
         }).compileComponents();
 
         fixture = TestBed.createComponent(AboutMeComponent);
